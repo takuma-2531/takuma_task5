@@ -47,6 +47,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8V-2v-cIY">
                                 <rect key="frame" x="119" y="103.5" width="31" height="30"/>
                                 <state key="normal" title="計算"/>
+                                <connections>
+                                    <action selector="tapCaluculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSb-Bt-2Kq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,6 +69,11 @@
                             <constraint firstItem="PFK-rN-4UN" firstAttribute="centerY" secondItem="eJf-N7-CcM" secondAttribute="centerY" id="xnv-jh-A1p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="MgW-pV-8E6" id="oGb-uW-MeF"/>
+                        <outlet property="dividendTextField" destination="eJf-N7-CcM" id="Uso-MV-r7E"/>
+                        <outlet property="divisorTextField" destination="tHy-i3-hMi" id="psq-ty-swk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
